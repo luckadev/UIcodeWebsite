@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+/* 
+font-family: 'Be Vietnam Pro', sans-serif;
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #7838FF #0d0d0d;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #0D0D0D;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #7838FF;
+    border-radius: 20px;
+    border: 4px solid #0D0D0D;
+  }
+
+::selection {
+    color: #0D0D0D;
+    background-color: #A174FF;
+}
+
+/* geral */
+span {
+    font-weight: bold;
+}
+.span-purple {
+    color: #A174FF;
+}
+.span-purple-sec {
+    color: #A174FF;
+}
+p {
+    font-size: 25px;
+    line-height: 35px;
+}
+h3 {
+    font-size: 25px;
+    color: #fff;
+}
+
+/* Header */
+header {
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 5rem;
+    padding-block: 15px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 9999;
+}
+header img {
+    width: 130px;
+}
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    margin-right: 40px;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: .4s;
+}
+
+header ul li a:hover {
+    color: #A174FF;
+}
+
+/* Main Cta */
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    background-color: #0D0D0D;
+    padding: 40px 0px 100px 0px;
+    margin-top: 80px;
+}
+a{
+    text-decoration: none;
+}
+
+#cta-text {
+    width: 490px;
+    margin-bottom: 40px;
+}
+#cta-text h1 {
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+#cta-text h1 span {
+    color: #A174FF;
+}
+#cta-text a {
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #BB9BFF;
+    border-radius: 8px;
+    padding-inline: 40px;
+    padding-block: 8px;
+    transition: .4s;
+}
+#cta-text a:hover {
+    background-color: #BB9BFF;
+    color: #0D0D0D;
+}
+#div-img img {
+    transition: .4s;
+}
+#div-img img:hover {
+    scale: 1.05;
+}
+
+/* Sessão: o que é o UIcode? */
+#section1 {
+    background-color: #fff;
+    color: #0D0D0D;
+}
+section h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+#div-sobre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    margin-bottom: 5rem;
+}
+#texts-sobre {
+    width: 400px;
+    font-size: 25px;
+    line-height: 35px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+#div-sobre-imagem {
+    transition: .4s;
+}
+#div-sobre-imagem:hover {
+    scale: 1.05;
+}
+
+/* sessão: E adivinha só? */
+
+#div-free-h2 {
+    color: #7838FF;
+    text-align: start;
+    margin-left: 11rem;
+    margin-bottom: 0rem;
+}
+
+#div-free {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+#div-free p {
+    width: 450px;
+    margin-bottom: 150px;
+}
+#div-free img {
+    position: relative;
+    bottom: 4.5rem;
+}
+
+/* sessão: Mas antes de baixar o UIcode */
+#section2 {
+    background-color: #0D0D0D;
+    color: #fff;
+    padding: 30px 0px 60px 0px;
+}
+
+#section2 h2 {
+    color: #7838FF;
+    text-align: center;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+#texts-sobre2 {
+    width: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#texts-sobre2 h3 {
+    color: #A174FF;
+}
+
+#texts-sobre2 ul {
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#texts-sobre2 li a{
+    color: #d9d9d9;
+    font-size: 18px;
+}
+#texts-sobre2 li a:hover{
+    color: #BB9BFF;
+}
+
+#div-img2 {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+#div-img2 img {
+    position: relative;
+    top: 50px;
+}
+#div-img2 #linkUI {
+    border: 2px solid #A174FF;
+    border-radius: 8px;
+    padding: 25px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 20px 15px 20px rgba(0, 0, 0, 0.71);
+}
+
+#div-img2 #linkUI h3 {
+    margin-top: 0px;
+    font-weight: 400;
+}
+
+#div-img2 #linkUI a {
+    background-color: #A174FF;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 400;
+    transition: .4s;
+}
+#div-img2 #linkUI a:hover {
+    color: #0D0D0D;
+    background-color: #BB9BFF;
+}
+
+
+
+/* media queries */
+@media (max-width: 320px){
+    p {
+        max-width: 300px;
+    }
+    #texts-sobre {
+        width: 300px;
+    }
+    #texts-sobre2 {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 550px){
+    header{
+        overflow-x: scroll;
+    }
+
+    #cta-text{
+        width: 100%;
+    }
+    #cta-text h1 {
+        font-size: 40px;
+        margin-left: 15px;
+    }
+    #cta-text a {
+        margin-left: 15px;
+    }
+
+    #div-free {
+        gap: 170px;
+    }
+    #div-free-h2 {
+        margin-left: 0px;
+        text-align: center;
+    }
+    #div-free p {
+        width: 300px;
+    }
+
+    #texts-sobre {
+        width: 300px;
+    }
+    #texts-sobre2 {
+        width: 300px;
+    }
+
+    p {
+        max-width: 380px;
+    }
+
+    img {
+        width: 300px;
+        max-width: 350px;
+    }
+
+    #div-img2 img {
+        width: 250px;
+    }
+
+    #div-img2 #linkUI {
+        margin: 0px 20px;
+    }
+}
+
+@media (max-width: 768px){
+    /* header */
+
+    main{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #div-sobre{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    #div-free {
+        flex-direction: column;
+    }
+    #div-free p {
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+    #div-free img {
+        width: 300px;
+        bottom: 8rem;
+    }
+
+    #content {
+        flex-direction: column;
+    }
+}
