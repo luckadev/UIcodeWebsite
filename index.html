@@ -8,19 +8,24 @@
     <meta name="keywords" content="ebook, programação, ui, design, UI, Designer">
     <meta name="author" content="Lucas Ribeiro">
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
     <title>UIcode - O Ebook sobre UI Design</title>
     <link rel="shortcut icon" href="./assets/LogoUIcodeFav.png" type="image/x-icon">
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <img src="./assets/LogoUIcode-Website.svg" alt="Logo-UIcode">
-        <ul>
-            <li><a href="#main">Produto</a></li>
-            <li><a href="#section1">Sobre</a></li>
-            <li><a href="#section2">Contato</a></li>
-        </ul>
+        <nav id="nav">
+            <button id="btnMobile">
+                <span id="hamburguer"></span>
+            </button>
+            <ul id="menu">
+                <li><a href="#main">Produto</a></li>
+                <li><a href="#section1">Sobre</a></li>
+                <li><a href="#section2">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main id="main">

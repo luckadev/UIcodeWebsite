@@ -59,6 +59,9 @@ h3 {
     font-size: 25px;
     color: #fff;
 }
+a{
+    text-decoration: none;
+}
 
 /* Header */
 header {
@@ -95,6 +98,10 @@ header ul li a:hover {
     color: #A174FF;
 }
 
+#btnMobile{
+    display: none;
+}
+
 /* Main Cta */
 main {
     display: flex;
@@ -104,9 +111,6 @@ main {
     background-color: #0D0D0D;
     padding: 50px 0px 150px 0px;
     margin-top: 80px;
-}
-a{
-    text-decoration: none;
 }
 
 #cta-text {
@@ -302,10 +306,76 @@ section h2 {
 }
 
 
-@media (max-width: 550px){
+@media (max-width: 600px){
+    /* btnMobile */
     header{
-        overflow-x: scroll;
+        padding-inline: 3rem;
+        padding-block: 25px;
     }
+    #btnMobile{
+        display: block;
+    }
+    #menu{
+        margin-right: 0px;
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 66px;
+        right: 0px;
+        background-color: rgba(13, 13, 13, .9);
+        height: 0px;
+        z-index: 1000;
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: auto;
+    }
+    #nav.active #menu{
+        height: calc(100vh - 200px);
+        visibility: visible;
+    }
+    #menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    #menu li {
+        padding: 1rem 0;
+        margin: 0 1rem;
+    }
+    #btnMobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+    #hamburguer {
+        color: #7838FF;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburguer::after, #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+    }
+    #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+
 
     #cta-text{
         width: 100%;
@@ -382,5 +452,20 @@ section h2 {
     #content {
         flex-direction: column;
         gap: 80px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1085px){
+    img{
+        width: 380px;
+    }
+    main, #div-sobre, #div-free, #content {
+        padding-inline: 25px;
+    }
+    main{
+        gap: 80px;
+    }
+    #content{
+        gap: 100px;
     }
 }
