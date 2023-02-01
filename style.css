@@ -352,16 +352,16 @@ section h2 {
     }
     #hamburguer {
         color: #7838FF;
-        border-top: 2px solid;
-        width: 20px;
+        border-top: 3px solid;
+        width: 25px;
     }
     #hamburguer::after, #hamburguer::before {
         content: '';
         display: block;
-        width: 20px;
-        height: 2px;
+        width: 25px;
+        height: 3px;
         background-color: currentColor;
-        margin-top: 5px;
+        margin-top: 6px;
         transition: .3s;
         position: relative;
     }
@@ -373,7 +373,7 @@ section h2 {
     }
     #nav.active #hamburguer::after {
         transform: rotate(-135deg);
-        top: -7px;
+        top: -9px;
     }
 
 
