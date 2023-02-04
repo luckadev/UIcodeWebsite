@@ -277,10 +277,11 @@ section h2 {
 }
 
 #div-img2 #linkUI a {
-    background-color: #A174FF;
+    background-color: #0D0D0D;
     color: #fff;
     font-size: 17px;
     padding: 10px 15px;
+    border: 2px solid #A174FF;
     border-radius: 8px;
     font-weight: 400;
     transition: .4s;
@@ -288,6 +289,7 @@ section h2 {
 #div-img2 #linkUI a:hover {
     color: #0D0D0D;
     background-color: #BB9BFF;
+    border: 2px solid #A174FF;
 }
 
 
@@ -300,10 +302,13 @@ footer h5{
     margin: 0px;
     font-size: 20px;
     padding: 20px;
+    font-weight: 400;
 }
 footer span a{
     color: #7838FF;
     transition: .4s;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 footer span a:hover{
     color: #A174FF;
