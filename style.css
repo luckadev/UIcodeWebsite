@@ -154,7 +154,7 @@ section h2 {
     text-align: center;
     font-size: 40px;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     padding: 0px 30px;
 }
 
@@ -315,6 +315,14 @@ footer span a:hover{
 }
 
 
+/* javascript animation */
+.init-hidden{
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.init-hidden-off{
+    opacity: 1;
+}
 
 
 
