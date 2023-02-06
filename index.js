@@ -11,7 +11,6 @@ btnMobile.addEventListener('touchstart', toggleMenu);
 
 // Animation with JS - observe the elements that are hidden and take them
 const observer = new IntersectionObserver( entries => {
-    console.log(entries);
 
     Array.from(entries).forEach( entry => {
         if (entry.intersectionRatio >= 1){
