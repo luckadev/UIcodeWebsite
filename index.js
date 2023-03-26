@@ -1,26 +1,21 @@
-const btnMobile = document.getElementById("btnMobile");
+const img = document.getElementById('img-ig');
+img.addEventListener('click', () => {
+    window.location.href = 'https://instagram.com/devcodepro'
+});
 
-function toggleMenu(event) {
-    if(event.type === 'touchstart') event.preventDefault();
-    const nav = document.getElementById("nav");
-    nav.classList.toggle('active');
+// menu
+let menu = document.getElementById("menu")
+menu.addEventListener('click', openMenu);
+menu.addEventListener('touchstart', openMenu);
+
+function openMenu(e) {
+    if(e.type == 'touchstart') e.preventDefault();
+    let list = document.getElementById('list');
+    list.classList.toggle('menu-active');
+
+    if(list.classList.contains('menu-active')) {
+        menu.innerHTML = `<i class="fa-solid fa-xmark fa-2x"></i>`
+    } else {
+        menu.innerHTML = `<i class="fa-solid fa-bars fa-2x"></i>`
+    }
 }
-
-btnMobile.addEventListener('click', toggleMenu);
-btnMobile.addEventListener('touchstart', toggleMenu);
-
-// Animation with JS - observe the elements that are hidden and take them
-const observer = new IntersectionObserver( entries => {
-
-    Array.from(entries).forEach( entry => {
-        if (entry.intersectionRatio >= 1){
-            entry.target.classList.add('init-hidden-off')
-        }
-    })
-}, {
-    threshold: [0, .5, 1]
-}) 
-
-Array.from(document.querySelectorAll('.init-hidden')).forEach( element => {
-    observer.observe(element)
-})

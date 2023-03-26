@@ -1,126 +1,127 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Um material gratuito que criei para ajudar quem está começando no UI Design e se destacar.">
+    <meta name="description"
+        content="Um material gratuito que criei para ajudar quem está começando no UI/Web Design e se destacar com seus projetos.">
     <meta name="keywords" content="ebook, programação, ui, design, UI, Designer">
     <meta name="author" content="Lucas Ribeiro">
     <link rel="stylesheet" href="style.css">
     <script src="index.js" defer></script>
-    <title>UIcode - O Ebook sobre UI Design</title>
-    <link rel="shortcut icon" href="./assets/LogoUIcodeFav.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0642c68ef3.js" crossorigin="anonymous"></script>
+    <title>UIcode - Aprenda UI Design</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <header id="header">
-        <img src="./assets/LogoUIcode-Website.svg" alt="Logo-UIcode">
-        <nav id="nav">
-            <button id="btnMobile">
-                <span id="hamburguer"></span>
-            </button>
-            <ul id="menu">
-                <li><a href="#main">Produto</a></li>
-                <li><a href="#section1">Sobre</a></li>
-                <li><a href="#section2">Contato</a></li>
+    <header id="inicio">
+        <nav>
+            <a href="" id="logo">
+                <img src="./assets/logo.png" alt="Logo">
+                <p>UIcode</p>
+            </a>
+            <button id="menu"><i class="fa-solid fa-bars fa-2x"></i></button>
+            <ul id="list">
+                <li><a href="#cards">Produto</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#community">Contato</a></li>
             </ul>
         </nav>
+        <a href="#install" class="btn">Baixar</a>
     </header>
 
-    <main id="main">
-        <div id="cta-text" class="init-hidden">
-            <h1>
-                Aprenda fundamentos de UI Design e se torne um <span>profissional</span> no mercado.
-            </h1>
-            <a href="#section1">Saber mais</a>
+    <main>
+        <div id="cta-text">
+            <h1>Aprenda de vez tudo sobre <span>UI Design</span></h1>
+            <p>As melhores técnicas para você se destacar no mercado de UI design e aprimorar mais ainda seus
+                conhecimentos.</p>
+            <div>
+                <a href="#install" class="btn">Baixar</a>
+                <a href="#cards" class="btn2">Produto</a>
+            </div>
         </div>
-        <div id="div-img">
-            <img src="./assets/capaImgCta.png" alt="Cta-sobre-o-UIcode" width="450">
+        <div id="cta-img">
+            <img src="./assets/img-cta.png" alt="Foto CTA">
         </div>
     </main>
 
-    <section id="section1">
-        <h2>O que é o UIcode?</h2>
-
-        <div id="div-sobre">
-            <div id="texts-sobre">
-                <p class="init-hidden">
-                    O <span class="span-purple">UIcode</span> é uma ferramenta que vai te ajudar a aprender e melhorar suas 
-                    habilidades em Design, seja para UI Design, para produzir postagens nas 
-                    redes sociais ou para melhorar suas aplicações web caso seja um <span>Developer</span>.
-                </p>
-                <p class="init-hidden">
-                    Eu desenvolvi esse Ebook para te ajudar pois assim como você, eu também tive 
-                    dificuldades no começo de aprender Design.
-                </p>
-            </div>
-            <div id="div-sobre-imagem">
-                <img src="./assets/img1-sobre.svg" alt="Foto-sobre-o-UIcode" width="470">
-            </div>
+    <section id="cards">
+        <div class="card">
+            <h2>Fundamentos</h2>
+            <p>Você aprenderá tudo sobre os fundamentos do UI/Web Design.</p>
         </div>
-        
+        <div class="card">
+            <h2>Ferramenta</h2>
+            <p>Aprenderá a usar a ferramenta mais usada hoje em dia para UI/Web Design.</p>
+        </div>
+        <div class="card">
+            <h2>Projetos reais</h2>
+            <p>Desenvolverá desafios reais e se quiser pode transformar eles em projetos frontend.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-social">
+            <img id="img-ig" src="./assets/instagram-logo.png" alt="Logo instagram">
+        </div>
+        <div class="about-text">
+            <p>
+                O <span>UIcode</span> é uma ferramenta que vai te ajudar a aprender e melhorar suas habilidades em Design, seja para
+                UI/Web Design, para produzir postagens nas redes sociais ou para melhorar suas aplicações web caso seja
+                um Developer.
+            </p>
+            <p>
+                Totalmente <span>gratuito</span> para você realmente aproveitar do conteúdo insano que coloquei lá, tudo gratuito.
+            </p>
+        </div>
+    </section>
+
+    <section id="community">
+        <div id="div1">
+            <h4>Para quem é o UIcode?</h4>
+        </div>
+        <div id="div2">
+            <p>
+                Para todos aqueles que desejam <span>melhorar</span> suas habilidades, seja para ser UI/Web Designer ou Desenvolvedor Frontend.
+            </p>
+            <p>
+                O <span>UIcode</span> foi desenvolvido com muito carinho para ensinar quem deseja evoluir de verdade.
+            </p>
+        </div>
+        <div id="div3">
+            <p>
+                Temos uma <span>comunidade</span> no instagram também, ensinando mais conteúdo sobre UI/Web design e Desenvolvimento.
+            </p>
+            <p>
+                Instagram: <a href="https://instagram.com/devcodepro">@devcodepro</a>
+            </p>
+        </div>
+        <img id="div4" src="./assets/uiCodeimg.png" alt="UIcode Img">
+    </section>
+
+    <section id="install">
+        <h1>Baixe o UIcode</h1>
         <div>
-            <h2 id="div-free-h2">E adivinha só?</h2>
-
-            <div id="div-free">
-                <p class="init-hidden">
-                    Totalmente <span class="span-purple">gratuito</span> para você realmente aproveitar do conteúdo <span>insano</span> 
-                    que coloquei lá, tudo gratuito.
-                </p>
-                <img src="./assets/meuEmoji.png" alt="MeuEmoji" width="420">
-            </div>
+            <p>
+                Antes de baixar o UIcode, ajude compartilhando o projeto para assim então acabar ajudando mais pessoas, Bons estudos!
+            </p>
+            <a href="#" class="btn"><i class="fa-solid fa-file-export"></i>Baixar</a>
         </div>
     </section>
-
-    <section id="section2">
-        <h2>Mas antes de baixar o UIcode...</h2>
-
-        <div id="content">
-
-            <div id="texts-sobre2">
-                <p class="init-hidden">
-                    O <span class="span-purple">UIcode</span> foi feito com muito esforço e dedicação para oferecer a 
-                    você, o melhor conteúdo.
-                </p>
-
-                <p class="init-hidden">
-                    Então para me manter motivado a postar conteúdo tanto nas redes 
-                    sociais e no UIcode de forma gratuita...
-                </p>
-
-                <p class="init-hidden">
-                    ...peço a você para contribuir me seguindo nas redes sociais e 
-                    compartilhando o <span class="span-purple">UIcode</span>, apenas isso.
-                </p>
-
-                <!-- links -->
-                <h3>Link das redes sociais:</h3>
-                <ul class="init-hidden">
-                    <li><a href="https://www.instagram.com/devcodepro/">Blog no Instagram</a></li>
-                    <li><a href="https://www.linkedin.com/in/devlucaspro/">Linkedin</a></li>
-                    <li><a href="https://www.github.com/devlucaspro/">Github</a></li>
-                </ul>
-            </div>
-            <div id="div-img2">
-                <img src="./assets/arrow-Website.svg" alt="Seta-detalhe">
-
-                <div id="linkUI" class="init-hidden">
-                    <h3>Link para baixar o <span class="span-purple-sec">UIcode</span></h3>
-                    <a href="./assets/UIcodeV2.pdf">Link aqui, só clicar!</a>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
+    
     <footer>
-        <h5 class="pFooter">&copy; Todos os direitos reservados, <span><a href="#main">Dev Lucas</a></span>.</h5>
+        <div id="socials">
+            <h3>Redes sociais</h3>
+            <a href="https://instagram.com/devcodepro">Instagram</a>
+            <a href="https://www.linkedin.com/in/devlucaspro/">LinkedIn</a>
+            <a href="https://github.com/devlucaspro">Github</a>
+        </div>
+        <a id="btnUp" href="#inicio"><i class="fa-solid fa-circle-chevron-up fa-3x"></i></a>
     </footer>
 
-
-
-    
 </body>
 </html>
